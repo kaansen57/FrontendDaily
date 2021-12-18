@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;900&family=Nunito:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  font-family: "Mulish", sans-serif;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+body {
+  background: #f2f2f2;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.popup {
+  position: relative;
+  background: #fff;
+  padding: 85px 100px;
+  border-radius: 15px;
+  width: 912px;
+  
+}
+h3 {
+  font-size: 28px;
+  color: #874285;
+  line-height: 34px;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+
+ul {
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .item {
+      margin-top: 40px;
+      h5 {
+        font-size: 20px;
+        font-weight: 900;
+        color: #874285;
+      }
+      p {
+        font-size: 16px;
+        max-width: 500px;
+        margin-top: 13px;
+      }
+    }
+
+    .dropdown {
+      cursor: pointer;
+      padding: 0 20px;
+      font-size: 20px;
+      margin-top: 36px;
+      width: 330px;
+      height: 50px;
+      border-radius: 5px;
+      border: 2px solid #d8dbe6;
+      appearance: none;
+      background: url("/Day1/img/arrow.png") no-repeat;
+      background-position: 95% center;
+    }
+  }
+}
+
+hr {
+  border: 1px solid #d8dbe6;
+  margin: 45px 0 5px 0;
+}
+
+.check-wrap {
+  .checkbox {
+    display: block;
+    width: 66px;
+    height: 37px;
+    border: 1px solid #d8dbe6;
+    border-radius: 18.5px;
+    padding: 4px;
+    cursor: pointer;
+    position: relative;
+
+    &::before {
+      transition: 0.4s background, 0.4s left ease-in-out;
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      width: 25px;
+      height: 25px;
+      border: 1px solid #979797;
+      border-radius: 50%;
+      background: #9298ad;
+    }
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  input[type="checkbox"]:checked + .checkbox {
+    &::before {
+      content: "";
+      position: absolute;
+      left: 33px;
+      top: 4px;
+      background: #874285;
+    }
+  }
+}
+
+.btn-wrapper {
+  display: flex;
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 161px;
+    height: 54px;
+    border-radius: 6px;
+    border: 1px solid #d8dbe6;
+    margin-top: 55px;
+    margin-right: 20px;
+    background: #fff;
+    color: #9298ad;
+    font-weight: bold;
+
+    &:hover {
+      border-color: darken(#d8d8d8, 20%);
+    }
+
+    &-active {
+      color: #fff;
+      background: #f34b8c;
+    }
+  }
+}
+
+.close-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  cursor: pointer;
+
+  .close-icon {
+    margin-bottom: 5px;
+    width: 18px;
+    height: 18px;
+    background: url("/Day1/img/close.png") no-repeat;
+  }
+  .close-text {
+    color: rgba(36, 46, 76, 0.5);
+    font-size: 16px;
+  }
+}
+

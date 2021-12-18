@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "../Day1/scss/index.scss"
-    ],
-    "names": [],
-    "file": "index.css"
-}
