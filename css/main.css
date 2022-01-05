@@ -18,6 +18,45 @@ body {
   height: 100%;
 }
 
+.logo {
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.logo span {
+  font-size: 35px;
+  color: #67b5ff;
+}
+
+header {
+  display: unset;
+  position: relative;
+}
+
+header .nav-mobile {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  header .nav-mobile {
+    display: block;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+}
+
+header .nav-mobile .nav-icon {
+  padding: 1rem;
+  font-size: 35px;
+}
+
+header .nav-mobile .nav-icon a {
+  color: #fff;
+}
+
 .nav {
   width: 100%;
   height: 70px;
@@ -31,64 +70,94 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: #171727;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
-.nav .logo {
-  color: white;
-  font-size: 30px;
-  font-weight: 700;
+.nav .show {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 
-.nav .logo span {
-  font-size: 35px;
-  color: #67b5ff;
+@media (max-width: 992px) {
+  .nav .nav-desktop {
+    display: none;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 1rem;
+    position: absolute;
+    left: 0;
+    top: 70px;
+    background: #171727;
+    padding: 1rem;
+  }
 }
 
-.nav ul .linkedin {
+.nav .nav-desktop .portfolio {
+  background: #1AB173;
+}
+
+.nav .nav-desktop .portfolio:hover {
+  background: #138556;
+}
+
+.nav .nav-desktop .linkedin {
   background: #0a66c2;
 }
 
-.nav ul .linkedin:hover {
+.nav .nav-desktop .linkedin:hover {
   background: #084d92;
 }
 
-.nav ul .github {
+.nav .nav-desktop .github {
   background: #46467d;
 }
 
-.nav ul .github:hover {
+.nav .nav-desktop .github:hover {
   background: #33335d;
 }
 
-.nav ul .instagram {
+.nav .nav-desktop .instagram {
   background: #dc004a;
 }
 
-.nav ul .instagram:hover {
+.nav .nav-desktop .instagram:hover {
   background: #a90039;
 }
 
-.nav ul a {
+.nav .nav-desktop a {
   -webkit-transition: background 0.5s ease;
   transition: background 0.5s ease;
   border-radius: 6px;
-  font-size: 1.1rem;
+  font-size: 16px;
   font-weight: 700;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  padding: 0.7rem 1rem;
-  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
   text-align: center;
   color: white;
 }
 
-.nav ul a li {
+.nav .nav-desktop a li {
   display: inline-block;
 }
 
-.nav ul a li i {
-  font-size: 24px;
+.nav .nav-desktop a li i {
+  font-size: 20px;
   margin-right: 7px;
 }
 
@@ -185,8 +254,8 @@ body {
   color: #fff;
   font-size: 18px;
   font-weight: 700;
-  -webkit-transition: background .5s ease;
-  transition: background .5s ease;
+  -webkit-transition: background 0.5s ease;
+  transition: background 0.5s ease;
 }
 
 .content .card .card-footer .btn.btn-primary:hover {

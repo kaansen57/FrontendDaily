@@ -1,5 +1,10 @@
+//font import
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&display=swap");
 
+//mixins import
+@import "mixins";
+
+//variables
 $background-color: #0f0f1b;
 $card-color: #171727;
 
@@ -11,14 +16,42 @@ $card-color: #171727;
   list-style: none;
   text-decoration: none;
 }
-body{
-     background: $background-color;
+body {
+  background: $background-color;
 }
 .container {
   width: 100%;
   height: 100%;
 }
-
+.logo {
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  span {
+    font-size: 35px;
+    color: #67b5ff;
+  }
+}
+header {
+  display: unset;
+  position: relative;
+  .nav-mobile {
+    display: none;
+    @include responsive(desktop) {
+      display: block;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+    .nav-icon {
+      a {
+        color: #fff;
+      }
+      padding: 1rem;
+      font-size: 35px;
+    }
+  }
+}
 .nav {
   width: 100%;
   height: 70px;
@@ -26,18 +59,33 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  .logo {
-    color: white;
-    font-size: 30px;
-    font-weight: 700;
-    span {
-      font-size: 35px;
-      color: #67b5ff;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: $card-color;
+ transition: all 1s ease;
+ .show{
+   display: flex !important;
+ }
+  .nav-desktop {
+    @include responsive(desktop) {
+      display: none;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 1rem;
+      position: absolute;
+      left: 0;
+      top: 70px;
+      background: $card-color;
+      padding: 1rem;
     }
-  }
-
-  ul {
+    .portfolio {
+      background: #1AB173;
+      &:hover {
+        background: darken(#1AB173, 10%);
+      }
+    }
     .linkedin {
       background: #0a66c2;
       &:hover {
@@ -59,17 +107,17 @@ body{
     a {
       transition: background 0.5s ease;
       border-radius: 6px;
-      font-size: 1.1rem;
+      font-size: 16px;
       font-weight: 700;
       width: max-content;
-      padding: 0.7rem 1rem;
-      margin: 0 1rem;
+      padding: 0.5rem 1rem;
+      margin: 0 0.5rem;
       text-align: center;
       color: white;
       li {
         display: inline-block;
         i {
-          font-size: 24px;
+          font-size: 20px;
           margin-right: 7px;
         }
       }
@@ -90,6 +138,7 @@ body{
     background: $card-color;
     border-radius: 20px;
     padding: 10px;
+
     .card-img {
       position: relative;
       img {
@@ -143,10 +192,10 @@ body{
           color: #fff;
           font-size: 18px;
           font-weight: 700;
-          transition: background .5s ease;
+          transition: background 0.5s ease;
 
-          &:hover{
-              background: lighten($card-color,30%);
+          &:hover {
+            background: lighten($card-color, 30%);
           }
         }
       }
