@@ -4,6 +4,11 @@ let data = [
     title: "Cards",
     url: "/Day1/index.html",
   },
+    {
+    img: "img/2.png",
+    title: "Google Clone",
+    url: "/Day2/index.html",
+  },
 ];
 
 const cardSection = document.querySelector(".content");
