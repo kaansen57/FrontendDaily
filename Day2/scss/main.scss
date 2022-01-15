@@ -1,4 +1,9 @@
+
+@import 'mixin';
+
 //dark theme
+
+
 $text-color-white: #e8eaed;
 $text-color-gray: #979797;
 $background-primary: #202124;
@@ -38,6 +43,9 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  .logo{
+    width:300px;
+  }
   p {
     color: $text-color-white;
     a {
@@ -62,6 +70,8 @@ html {
     border-radius: 50px;
     border: 1px solid $text-color-gray;
     padding: 10px 20px;
+
+    
     &:hover {
       border: 1px solid lighten($background-primary, 5%);
       background-color: lighten($background-primary, 5%);
@@ -80,6 +90,9 @@ html {
       border: none;
       color: $text-color-white;
       font-size: 16px;
+    }
+    .keyboard-button{
+      cursor: pointer;
     }
   }
 }
@@ -164,3 +177,27 @@ ul {
     }
   }
 }
+
+
+    @include responsive(small){
+      .content {
+        .logo{
+          max-width: 250px;
+        }
+        .search-wrapper{
+          width: 80%;
+        }
+        p{
+          font-size: 14px;
+        }
+      }
+
+      .footer{
+        .footer-bottom{
+          justify-content: center;
+          ul{
+             display: none;
+          }
+        }
+      }
+    }

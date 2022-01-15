@@ -54,6 +54,10 @@ html {
           justify-content: center;
 }
 
+.content .logo {
+  width: 300px;
+}
+
 .content p {
   color: #e8eaed;
 }
@@ -111,6 +115,10 @@ html {
   border: none;
   color: #e8eaed;
   font-size: 16px;
+}
+
+.content .search-wrapper .keyboard-button {
+  cursor: pointer;
 }
 
 .btn {
@@ -215,5 +223,25 @@ ul li {
 .footer-bottom h5 {
   font-weight: normal;
   font-size: 14px;
+}
+
+@media (max-width: 790px) {
+  .content .logo {
+    max-width: 250px;
+  }
+  .content .search-wrapper {
+    width: 80%;
+  }
+  .content p {
+    font-size: 14px;
+  }
+  .footer .footer-bottom {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer .footer-bottom ul {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */
