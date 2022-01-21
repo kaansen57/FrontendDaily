@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3 - Search-Filter Components</title>
+    <link rel="stylesheet" href="/Day3/css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card column">
+            <div class="input-group">
+                <svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                    <g id="Group" transform="translate(0.875 0.875)" opacity="0.5">
+                        <path d="M0 0L28 0L28 28L0 28L0 11.5756L0 0Z" id="Path" fill="none" fill-rule="evenodd"
+                            stroke="none" />
+                        <path
+                            d="M11.6667 19.8333C16.177 19.8333 19.8333 16.177 19.8333 11.6667C19.8333 7.15634 16.177 3.5 11.6667 3.5C7.15634 3.5 3.5 7.15634 3.5 11.6667C3.5 16.177 7.15634 19.8333 11.6667 19.8333Z"
+                            id="Oval" fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="1.75"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M24.5 24.5L17.5 17.5" id="Path" fill="none" fill-rule="evenodd" stroke="#FFFFFF"
+                            stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                </svg>
+                <input type="text" class="input" placeholder="Start typing to search">
+            </div>
+            <ul class="first-card-ul">
+                <h6>POPULAR SEARCHES</h6>
+                <li>Air Transport</li>
+                <li>Aviation</li>
+                <li>Mekaniske Verksted</li>
+                <li>Port Authority</li>
+                <li>Sporvei</li>
+                <li>Creditbank</li>
+            </ul>
+
+        </div>
+
+        <br>
+        <div class="card row">
+            <div class="input-group transparent">
+                <svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                    <g id="Group" transform="translate(0.875 0.875)" opacity="0.5">
+                        <path d="M0 0L28 0L28 28L0 28L0 11.5756L0 0Z" id="Path" fill="none" fill-rule="evenodd"
+                            stroke="none" />
+                        <path
+                            d="M11.6667 19.8333C16.177 19.8333 19.8333 16.177 19.8333 11.6667C19.8333 7.15634 16.177 3.5 11.6667 3.5C7.15634 3.5 3.5 7.15634 3.5 11.6667C3.5 16.177 7.15634 19.8333 11.6667 19.8333Z"
+                            id="Oval" fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="1.75"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M24.5 24.5L17.5 17.5" id="Path" fill="none" fill-rule="evenodd" stroke="#FFFFFF"
+                            stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                </svg>
+                <input type="text" class="input" placeholder="Start typing to search">
+            </div>
+            <div class="separator"></div>
+            <ul class="second-card-ul">
+                <li class="active">Projects</li>
+                <li>Images</li>
+                <li>People</li>
+            </ul>
+        </div>
+        <br>
+
+        <div class="card">
+            <label for="country">
+                <h6>Country</h6>
+                <select class="input-group" id="country">
+                    <option value="Turkey">Turkey</option>
+                    <option value="England">England</option>
+                    <option value="USA">USA</option>
+                    <option value="Russia">Russia</option>
+                </select>
+                <svg xmlns="http://www.w3.org/2000/svg" width="291.4" height="292.4">
+                    <path fill="#fff"
+                        d="M287 69.4a17.6 17.6 0 0 0-13-5.4H18.4c-5 0-9.3 1.8-12.9 5.4A17.6 17.6 0 0 0 0 82.2c0 5 1.8 9.3 5.4 12.9l128 127.9c3.6 3.6 7.8 5.4 12.8 5.4s9.2-1.8 12.8-5.4L287 95c3.5-3.5 5.4-7.8 5.4-12.8 0-5-1.9-9.2-5.5-12.8z" />
+                </svg>
+            </label>
+            <label for="city">
+                <h6>Country</h6>
+                <input type="text" id="city" class="input-group" value="Kaan">
+            </label>
+            <hr>
+            <div class="button-group">
+                <a href="#">Cancel</a>
+                <a href="#" class="btn btn-active">Apply Filters</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

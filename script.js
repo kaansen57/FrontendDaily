@@ -4,10 +4,15 @@ let data = [
     title: "Cards",
     url: "/Day1/index.html",
   },
-    {
+  {
     img: "img/2.png",
     title: "Google Clone",
     url: "/Day2/index.html",
+  },
+  {
+    img: "img/3.png",
+    title: "Search-Filter Components",
+    url: "/Day3/index.html",
   },
 ];
 
