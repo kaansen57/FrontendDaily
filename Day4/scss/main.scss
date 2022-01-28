@@ -21,6 +21,7 @@ $online-text-color: #31b057;
 .nav {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
   height: 56px;
   padding: 1rem 5rem;
@@ -137,7 +138,7 @@ $online-text-color: #31b057;
 }
 
 .content-wrapper{
-  padding: 5rem;
+  padding: 1.5rem 5rem;
 }
 
 
