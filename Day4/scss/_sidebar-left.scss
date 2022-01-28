@@ -78,6 +78,9 @@
       font-size: 14px;
       color: $text-color-blue;
       padding: 0.2rem 0;
+      &:hover{
+        color: $text-color-black;
+      }
     }
     .newest-list {
       margin-bottom: 2rem;
@@ -114,17 +117,24 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    .plus{
+    cursor: pointer;
+    .plus {
       display: inline-block;
       width: 24px;
       height: 24px;
-      background: url('../img/plus.png') center center;
+      background: url("../img/plus.png") center center;
     }
   }
-  .find-more{
-    color:$text-color-blue;
+  .find-more {
+    color: $text-color-blue;
     align-items: center;
     justify-content: center;
-    font-size: 14px;
+    font-size: 16px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    &:hover {
+      color: $bg-white;
+      background: $text-color-blue;
+    }
   }
 }

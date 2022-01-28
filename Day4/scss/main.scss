@@ -4,8 +4,10 @@ $text-color-blue: #006699;
 $text-color-gray: #aaaaaa;
 $text-color-black: #17272f;
 $online-text-color: #31b057;
+$bg-filter: rgba(222, 222, 222,0.24);
 
 @import "sidebar-left";
+@import "center-content";
 
 * {
   margin: 0;
@@ -25,7 +27,6 @@ $online-text-color: #31b057;
   justify-content: center;
   align-items: center;
   height: 56px;
-  // padding: 1rem 5rem;
   background-color: $bg-white;
   font-family: "Roboto", sans-serif;
   .logo {
@@ -138,5 +139,8 @@ $online-text-color: #31b057;
 }
 
 .content-wrapper {
-  padding: 1.5rem 5rem;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 10rem;
+  column-gap: 2rem;
 }
