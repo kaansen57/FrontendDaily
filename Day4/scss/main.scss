@@ -1,0 +1,143 @@
+$bg-gray: #f5f6f8;
+$bg-white: #ffffff;
+$text-color-blue: #006699;
+$text-color-gray:#AAAAAA;
+$text-color-black:#17272F;
+$online-text-color: #31b057;
+
+@import 'sidebar-left';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto',sans-serif;
+}
+
+:root {
+  background-color: $bg-gray;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 56px;
+  padding: 1rem 5rem;
+  background-color: $bg-white;
+  font-family: "Roboto", sans-serif;
+  .logo {
+    width: 92px;
+    height: 24px;
+    margin-right: 1rem;
+  }
+  .search-wrapper {
+    width: 312px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $bg-gray;
+    border-radius: 4px;
+    .icon-search {
+      width: 20px;
+      height: 20px;
+      margin: 0 10px;
+    }
+    input {
+      width: 80%;
+      height: 90%;
+      background-color: transparent;
+      border: none;
+      outline: none;
+    }
+  }
+  .nav-list {
+    list-style-type: none;
+    display: flex;
+    margin: 0 5rem 0 3rem;
+    a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      li {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        color: $text-color-blue;
+      }
+    }
+    .home,
+    .users,
+    .briefcase,
+    .message,
+    .bell,
+    .grid {
+      display: inline-flex;
+      align-items: center;
+      width: 24px;
+      height: 24px;
+      margin-right: 5px;
+      &:hover {
+        filter: brightness(0.5) sepia(1) hue-rotate(170deg) saturate(3);
+      }
+    }
+  }
+  .home {
+    background: url("/Day4/img/home.svg") no-repeat center center;
+  }
+  .users {
+    background: url("/Day4/img/users.svg") no-repeat center center;
+  }
+  .briefcase {
+    background: url("/Day4/img/briefcase.svg") no-repeat center center;
+  }
+  .message {
+    background: url("/Day4/img/message.svg") no-repeat center center;
+  }
+  .bell {
+    background: url("/Day4/img/bell.svg") no-repeat center center;
+  }
+  .grid {
+    background: url("/Day4/img/grid.svg") no-repeat center center;
+  }
+
+  .user-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+    cursor: pointer;
+    .user-menu-information {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      .user-menu-title {
+        font-weight: 500;
+        font-size: 14px;
+      }
+      .online {
+        margin-top: 3px;
+        color: $online-text-color;
+      }
+      display: flex;
+      flex-direction: column;
+    }
+    .user {
+      width: 30px;
+      height: 30px;
+      border-radius: 50px;
+    }
+    .arrow {
+      width: 10px;
+      height: 10px;
+      background: url("/Day4/img/arrow.svg") no-repeat center center;
+    }
+  }
+}
+
+.content-wrapper{
+  padding: 5rem;
+}
+
+

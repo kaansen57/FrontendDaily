@@ -1,0 +1,70 @@
+.sidebar-left {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  height: auto;
+
+  .user-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 270px;
+    height: auto;
+    background-color: $bg-white;
+    border-radius: 6px;
+    padding: 1rem;
+    position: relative;
+    z-index: -2;
+    .user-card-banner {
+      img {
+        position: absolute;
+        top: 10px;
+        left: 8px;
+        z-index: -1;
+        width: 254px;
+        height: 43px;
+        border-radius: 4px;
+      }
+    }
+    .user-card-img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50px;
+      border: 4px solid $bg-white;
+      margin:1rem 0;
+    }
+    .user-card-name{
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    .user-card-job{
+        margin-top: 4px;
+        font-size: 14px;
+        color:$text-color-gray;
+        opacity: .7;
+    }
+    hr{
+        margin: 1rem 0;
+        width: 100%;
+        background-color: $text-color-gray;
+        border: 5px;
+        border:1px solid $text-color-gray;
+        opacity: .4;
+    }
+    .card-profile-information{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin: 5px 0;
+        &-title{
+            font-weight: normal;
+            font-size: 14px;
+            color: $text-color-black;
+        }
+        &-score{
+            font-size: 14px;
+            color: $text-color-blue;
+        }
+    }
+  }
+}
