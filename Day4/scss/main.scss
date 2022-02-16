@@ -7,6 +7,7 @@ $online-text-color: #31b057;
 $bg-filter: rgba(222, 222, 222,0.24);
 
 @import "sidebar-left";
+@import "sidebar-right";
 @import "center-content";
 
 * {
@@ -23,12 +24,16 @@ $bg-filter: rgba(222, 222, 222,0.24);
 }
 
 .nav {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 56px;
   background-color: $bg-white;
   font-family: "Roboto", sans-serif;
+  position: fixed;
+  top: 0;
+  z-index: 999;
   .logo {
     width: 92px;
     height: 24px;
@@ -143,4 +148,5 @@ $bg-filter: rgba(222, 222, 222,0.24);
   justify-content: center;
   padding: 1rem 10rem;
   column-gap: 2rem;
+  margin: 4rem 0 0 0;
 }

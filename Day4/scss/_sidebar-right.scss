@@ -1,0 +1,58 @@
+@import "sidebar-left";
+
+.sidebar-right {
+  @extend .sidebar-left;
+
+  .card {
+    .feed-container {
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+      margin: 0.5rem 0;
+
+      .feed-image {
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+      }
+      .feed-article {
+        display: flex;
+        flex-direction: column;
+        &-bottom {
+          display: flex;
+          align-items: center;
+          h6 {
+            color: $text-color-gray;
+          }
+          i {
+            transform: scale(0.3);
+            color: $text-color-gray;
+          }
+        }
+      }
+      .feed-button {
+        width: 24px;
+        height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        border: 1px solid $text-color-blue;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background-color: $text-color-blue;
+          color: $bg-white;
+
+          i {
+            color: $bg-white;
+          }
+        }
+        i {
+          transform: scale(0.7);
+          color: $text-color-blue;
+        }
+      }
+    }
+  }
+}
