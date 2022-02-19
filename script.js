@@ -14,6 +14,11 @@ let data = [
     title: "Search-Filter Components",
     url: "/Day3/index.html",
   },
+  {
+    img: "img/4.png",
+    title: "LinkedIn ReDesign",
+    url: "/Day4/index.html",
+  },
 ];
 
 const cardSection = document.querySelector(".content");
@@ -25,7 +30,6 @@ mobileMenuButton.addEventListener("click", () => {
   if (mobileMenuItems.classList.value === "nav-desktop show") {
         mobileMenuItems.className = "nav-desktop";
   } else {
-    console.log(mobileMenuItems.classList);
      mobileMenuItems.className = "nav-desktop show";
   }
 });
