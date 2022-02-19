@@ -31,9 +31,9 @@ $bg-filter: rgba(222, 222, 222,0.24);
   height: 56px;
   background-color: $bg-white;
   font-family: "Roboto", sans-serif;
-  position: fixed;
-  top: 0;
-  z-index: 999;
+  position: relative;
+  // top: 0;
+  // z-index: 999;
   .logo {
     width: 92px;
     height: 24px;
@@ -148,5 +148,5 @@ $bg-filter: rgba(222, 222, 222,0.24);
   justify-content: center;
   padding: 1rem 10rem;
   column-gap: 2rem;
-  margin: 4rem 0 0 0;
+  margin: 1rem 0 0 0;
 }

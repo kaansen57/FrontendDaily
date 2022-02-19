@@ -1,8 +1,9 @@
 .sidebar-left {
-  display: flex;
-  flex-direction: column;
   width: 270px;
   height: auto;
+  align-self: flex-start;
+  position:sticky;
+  top: 20px;
   .card {
     display: flex;
     flex-direction: column;

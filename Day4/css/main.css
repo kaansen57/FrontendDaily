@@ -1,13 +1,11 @@
 .sidebar-left, .sidebar-right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   width: 270px;
   height: auto;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
 }
 
 .sidebar-left .card, .sidebar-right .card {
@@ -195,15 +193,13 @@
 }
 
 .sidebar-left, .sidebar-right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   width: 270px;
   height: auto;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
 }
 
 .sidebar-left .card, .sidebar-right .card {
@@ -388,6 +384,11 @@
 .sidebar-left .find-more:hover, .sidebar-right .find-more:hover {
   color: #ffffff;
   background: #006699;
+}
+
+.sidebar-right .card {
+  width: 270px;
+  height: auto;
 }
 
 .sidebar-right .card .feed-container {
@@ -468,7 +469,7 @@
   color: #006699;
 }
 
-.sidebar-left, .sidebar-right {
+.sidebar-right .card .advertisements-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -476,8 +477,63 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-align: center;
+}
+
+.sidebar-right .card .advertisements-container .advertisements-title,
+.sidebar-right .card .advertisements-container .advertisements-subtitle {
+  text-align: left;
+}
+
+.sidebar-right .card .advertisements-container .advertisements-subtitle {
+  margin: 0.5rem 0 0 0;
+  color: #aaaaaa;
+}
+
+.sidebar-right .card .advertisements-container .advertisements-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sidebar-right .card .advertisements-container .advertisements-images img {
+  width: 80px;
+  height: 80px;
+  margin: 0 0 1rem 0;
+}
+
+.sidebar-right .card .advertisements-container .advertisement-article {
+  text-align: left;
+}
+
+.sidebar-right .card .advertisements-container .visit-now {
+  margin: 1rem 0 0 0;
+  color: #006699;
+  font-weight: bold;
+  padding: 1rem 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border: 1px solid #fff;
+}
+
+.sidebar-right .card .advertisements-container .visit-now:hover {
+  border: 1px solid #006699;
+}
+
+.sidebar-left, .sidebar-right {
   width: 270px;
   height: auto;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
 }
 
 .sidebar-left .card, .sidebar-right .card {
@@ -1075,9 +1131,7 @@ hr {
   height: 56px;
   background-color: #ffffff;
   font-family: "Roboto", sans-serif;
-  position: fixed;
-  top: 0;
-  z-index: 999;
+  position: relative;
 }
 
 .nav .logo {
@@ -1259,6 +1313,6 @@ hr {
   padding: 1rem 10rem;
   -webkit-column-gap: 2rem;
           column-gap: 2rem;
-  margin: 4rem 0 0 0;
+  margin: 1rem 0 0 0;
 }
 /*# sourceMappingURL=main.css.map */
