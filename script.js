@@ -19,6 +19,11 @@ let data = [
     title: "LinkedIn ReDesign",
     url: "/Day4/index.html",
   },
+  {
+    img: "img/5.png",
+    title: "Wallet App",
+    url: "/Day5/index.html",
+  },
 ];
 
 const cardSection = document.querySelector(".content");

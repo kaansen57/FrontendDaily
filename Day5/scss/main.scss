@@ -3,13 +3,15 @@ $bg-color-lightdark: #252d37;
 $bg-color-lightdark-2: #1b242e;
 $text-white: #fff;
 $text-gray: #6b6b6b;
+$text-blue: #157aff;
 $border-color: #eee;
-
+@import "icon-font";
+@import "font";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Mulish", sans-serif;
+  font-family: "Louis George Cafe";
   list-style-type: none;
   text-decoration: none;
 }
@@ -29,7 +31,7 @@ body {
   width: 414px;
   height: auto;
   border: 3px solid $border-color;
-  padding: 1.5rem 0;
+  padding: 1.5rem 0 0 0;
   border-radius: 20px;
   position: relative;
   .card-header {
@@ -43,6 +45,9 @@ body {
     .card-header-price {
       margin: 0.5rem 0 0 0;
       color: $text-white;
+    }
+    .user-photo{
+      border-radius: 50px;
     }
   }
   .options-slider {
@@ -63,20 +68,20 @@ body {
     .option-list {
       display: flex;
       .option-wrapper {
-        display: flex;
         text-align: center;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
         .option {
           display: flex;
-          flex-direction: column;
           align-items: center;
+          justify-content: center;
           height: 60px;
           width: 60px;
           margin: 0 0.5rem;
           border-radius: 25px;
           background-color: $bg-color-lightdark;
+          i {
+            color: $text-white;
+            font-size: 20px;
+          }
         }
         .text {
           font-size: 14px;
@@ -94,7 +99,7 @@ body {
     width: 100%;
     height: 400px;
     background-color: $bg-color-lightdark-2;
-    border-radius: 50px;
+    border-radius: 50px 50px 0 0;
     touch-action: pan-y;
     overflow-y: scroll;
     color: $text-white;
@@ -108,17 +113,79 @@ body {
       background-color: $bg-color-lightdark;
       outline: 1px solid $bg-color-lightdark;
     }
+    .today-transaction {
+      &-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 0 1rem 0;
+        .top-buttons {
+          display: flex;
+          a {
+            .icon {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 52px;
+              height: 52px;
+              background-color: $bg-color-lightdark;
+              border-radius: 15px;
+              margin: 0 0.5rem;
+              i {
+                color: $text-white;
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+      
+    }
+    .transaction-paid {
+      padding: 1rem 0;
+      hr{
+        border-color: $text-gray;
+      }
+      .paid {
+        display: flex;
+        justify-content: space-around;
+        margin:1rem 0;
+
+        &-detail{
+          h4{
+            color: $text-gray;
+            margin:.5rem 0 0 0;
+          }
+        }
+      }
+    }
   }
 
   .bottom-menu {
     width: 100%;
-    height: 80px;
-    position: absolute;
+    height: 60px;
+    position: relative;
     bottom: 0;
     left: 0;
     background-color: $bg-color-dark;
     border-radius: 0 0 15px 15px;
-    .bottom-nav {
+
+    ul {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      li {
+        a {
+          .icon {
+            i {
+              color: $text-blue;
+              font-size: 30px;
+            }
+          }
+        }
+      }
     }
   }
 }
