@@ -193,6 +193,12 @@ body {
   position: relative;
 }
 
+@media (max-width: 500px) {
+  .main-card {
+    width: 90%;
+  }
+}
+
 .main-card .card-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -364,6 +370,15 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin: 1rem 0;
+}
+
+.main-card .transaction-card .transaction-paid .paid img {
+  width: 50px;
+  height: 50px;
+}
+
+.main-card .transaction-card .transaction-paid .paid-detail {
+  margin: 0 .5rem;
 }
 
 .main-card .transaction-card .transaction-paid .paid-detail h4 {

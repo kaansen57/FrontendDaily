@@ -7,6 +7,7 @@ $text-blue: #157aff;
 $border-color: #eee;
 @import "icon-font";
 @import "font";
+@import "mixin";
 * {
   margin: 0;
   padding: 0;
@@ -34,6 +35,9 @@ body {
   padding: 1.5rem 0 0 0;
   border-radius: 20px;
   position: relative;
+  @include responsive(small){
+    width: 90%;
+  }
   .card-header {
     display: flex;
     justify-content: space-between;
@@ -150,8 +154,12 @@ body {
         display: flex;
         justify-content: space-around;
         margin:1rem 0;
-
+        img{
+          width: 50px;
+          height: 50px;
+        }
         &-detail{
+          margin:0 .5rem;
           h4{
             color: $text-gray;
             margin:.5rem 0 0 0;
