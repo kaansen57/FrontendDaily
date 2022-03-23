@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: #1a212a;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem 0;
+}
+
+.main-card {
+  width: 414px;
+  height: auto;
+  border: 3px solid #eee;
+  padding: 1.5rem 0;
+  border-radius: 20px;
+  position: relative;
+}
+
+.main-card .card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 2rem;
+}
+
+.main-card .card-header .card-header-title {
+  color: #6b6b6b;
+}
+
+.main-card .card-header .card-header-price {
+  margin: 0.5rem 0 0 0;
+  color: #fff;
+}
+
+.main-card .options-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: scroll;
+  -ms-touch-action: pan-x;
+      touch-action: pan-x;
+  margin: 1rem 1rem;
+  padding-bottom: 1rem;
+}
+
+.main-card .options-slider::-webkit-scrollbar {
+  height: 0.6rem;
+}
+
+.main-card .options-slider::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: #252d37;
+  outline: 1px solid #252d37;
+}
+
+.main-card .options-slider .option-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-card .options-slider .option-list .option-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-card .options-slider .option-list .option-wrapper .option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+  width: 60px;
+  margin: 0 0.5rem;
+  border-radius: 25px;
+  background-color: #252d37;
+}
+
+.main-card .options-slider .option-list .option-wrapper .text {
+  font-size: 14px;
+  margin: 0.5rem 0 0 0;
+  color: #fff;
+}
+
+.main-card .transaction-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem;
+  width: 100%;
+  height: 400px;
+  background-color: #1b242e;
+  border-radius: 50px;
+  -ms-touch-action: pan-y;
+      touch-action: pan-y;
+  overflow-y: scroll;
+  color: #fff;
+  font-size: 14px;
+}
+
+.main-card .transaction-card::-webkit-scrollbar {
+  width: 0.7rem;
+}
+
+.main-card .transaction-card::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: #252d37;
+  outline: 1px solid #252d37;
+}
+
+.main-card .bottom-menu {
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #1a212a;
+  border-radius: 0 0 15px 15px;
+}
+/*# sourceMappingURL=main.css.map */
