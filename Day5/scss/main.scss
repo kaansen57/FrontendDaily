@@ -41,7 +41,7 @@ body {
   border-radius: 20px;
   position: relative;
   @include responsive(small) {
-    width: 90%;
+    width: 80%;
   }
   .card-header {
     display: flex;

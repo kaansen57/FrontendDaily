@@ -203,6 +203,12 @@ body {
   position: relative;
 }
 
+@media (max-width: 500px) {
+  .main-card {
+    width: 80%;
+  }
+}
+
 .main-card .card-header {
   display: -webkit-box;
   display: -ms-flexbox;
