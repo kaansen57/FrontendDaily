@@ -5,3 +5,11 @@
         }
     } 
 }
+
+@mixin responsive($breakpoint) {
+    @if($breakpoint == medium){
+        @media (max-width:900px) {
+            @content;
+        }
+    } 
+}
