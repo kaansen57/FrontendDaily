@@ -378,12 +378,12 @@ body {
 }
 
 .main-card .transaction-card .transaction-paid .paid-detail {
-  margin: 0 .5rem;
+  margin: 0 0.5rem;
 }
 
 .main-card .transaction-card .transaction-paid .paid-detail h4 {
   color: #6b6b6b;
-  margin: .5rem 0 0 0;
+  margin: 0.5rem 0 0 0;
 }
 
 .main-card .bottom-menu {
@@ -412,5 +412,127 @@ body {
 .main-card .bottom-menu ul li a .icon i {
   color: #157aff;
   font-size: 30px;
+}
+
+.main-card .card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-card .card-header .back .icon-back {
+  color: #fff;
+  font-size: 24px;
+}
+
+.main-card .card-header .header-title h2 {
+  color: #fff;
+}
+
+.main-card .card-header .menu .icon-3dots {
+  color: #fff;
+  font-size: 24px;
+}
+
+.main-card .card-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem;
+  padding: 1.5rem;
+  overflow-x: scroll;
+  -ms-touch-action: pan-x;
+      touch-action: pan-x;
+}
+
+.main-card .card-list::-webkit-scrollbar {
+  height: 0.6rem;
+}
+
+.main-card .card-list::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: #252d37;
+  outline: 1px solid #252d37;
+}
+
+.main-card .card-list .card-color-1 {
+  background: #3a6186;
+  background: -webkit-gradient(linear, left top, right top, from(#89253e), to(#3a6186));
+  background: linear-gradient(to right, #89253e, #3a6186);
+}
+
+.main-card .card-list .card-color-2 {
+  background: #141e30;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#243b55), to(#141e30));
+  background: linear-gradient(to right, #243b55, #141e30);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.main-card .card-list .card-color-3 {
+  background: #1d4350;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#a43931), to(#1d4350));
+  background: linear-gradient(to right, #a43931, #1d4350);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.main-card .card-list .credit-card {
+  min-width: 310px;
+  height: 170px;
+  padding: 1rem 1.5rem;
+  border-radius: 20px;
+  -webkit-box-shadow: 0.5px 0.5px 10px rgba(255, 255, 255, 0.3);
+          box-shadow: 0.5px 0.5px 10px rgba(255, 255, 255, 0.3);
+}
+
+.main-card .card-list .credit-card:first-child {
+  margin: 0 1.5rem 0 0;
+}
+
+.main-card .card-list .credit-card:last-child {
+  margin: 0 0 0 2rem;
+}
+
+.main-card .card-list .credit-card-header .bank-name {
+  font-weight: normal;
+  color: #fff;
+}
+
+.main-card .card-list .credit-card-main {
+  margin: 2rem 0 0 0;
+}
+
+.main-card .card-list .credit-card-main img {
+  width: 40px;
+  height: 30px;
+}
+
+.main-card .card-list .credit-card-footer .card-number-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-card .card-list .credit-card-footer .card-number-wrapper .card-number {
+  padding: 1rem 0 0 0;
+  color: #fff;
 }
 /*# sourceMappingURL=main.css.map */

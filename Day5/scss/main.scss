@@ -35,7 +35,7 @@ body {
   padding: 1.5rem 0 0 0;
   border-radius: 20px;
   position: relative;
-  @include responsive(small){
+  @include responsive(small) {
     width: 90%;
   }
   .card-header {
@@ -50,7 +50,7 @@ body {
       margin: 0.5rem 0 0 0;
       color: $text-white;
     }
-    .user-photo{
+    .user-photo {
       border-radius: 50px;
     }
   }
@@ -143,26 +143,25 @@ body {
           }
         }
       }
-      
     }
     .transaction-paid {
       padding: 1rem 0;
-      hr{
+      hr {
         border-color: $text-gray;
       }
       .paid {
         display: flex;
         justify-content: space-around;
-        margin:1rem 0;
-        img{
+        margin: 1rem 0;
+        img {
           width: 50px;
           height: 50px;
         }
-        &-detail{
-          margin:0 .5rem;
-          h4{
+        &-detail {
+          margin: 0 0.5rem;
+          h4 {
             color: $text-gray;
-            margin:.5rem 0 0 0;
+            margin: 0.5rem 0 0 0;
           }
         }
       }
@@ -191,6 +190,110 @@ body {
               color: $text-blue;
               font-size: 30px;
             }
+          }
+        }
+      }
+    }
+  }
+
+  //Main Card 2 - Your Cards Component
+  .card-header {
+    display: flex;
+    align-items: center;
+    .back {
+      .icon-back {
+        color: $text-white;
+        font-size: 24px;
+      }
+    }
+    .header-title {
+      h2 {
+        color: $text-white;
+      }
+    }
+    .menu {
+      .icon-3dots {
+        color: $text-white;
+        font-size: 24px;
+      }
+    }
+  }
+  //Credit cards list
+  .card-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1rem;
+    padding: 1.5rem;
+    overflow-x: scroll;
+    touch-action: pan-x;
+
+    &::-webkit-scrollbar {
+      height: 0.6rem;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 20px;
+      background-color: $bg-color-lightdark;
+      outline: 1px solid $bg-color-lightdark;
+    }
+    .card-color-1 {
+      background: #3a6186;
+      background: -webkit-linear-gradient(to right, #89253e, #3a6186);
+      background: linear-gradient(to right, #89253e, #3a6186);
+    }
+    .card-color-2 {
+      background: #141e30; /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #243b55, #141e30); /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(
+        to right,
+        #243b55,
+        #141e30
+      ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    .card-color-3 {
+      background: #1d4350; /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #a43931, #1d4350); /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(
+        to right,
+        #a43931,
+        #1d4350
+      ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    .credit-card {
+      &:first-child {
+        margin: 0 1.5rem 0 0;
+      }
+      &:last-child {
+        margin: 0 0 0 2rem;
+      }
+      min-width: 310px;
+      height: 170px;
+      padding: 1rem 1.5rem;
+      border-radius: 20px;
+      box-shadow: 0.5px 0.5px 10px rgba($text-white, 0.3);
+
+      &-header {
+        .bank-name {
+          font-weight: normal;
+          color: $text-white;
+        }
+      }
+      &-main {
+        margin: 2rem 0 0 0;
+        img {
+          width: 40px;
+          height: 30px;
+        }
+      }
+      &-footer {
+        .card-number-wrapper {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .card-number {
+            padding: 1rem 0 0 0;
+            color: $text-white;
           }
         }
       }
